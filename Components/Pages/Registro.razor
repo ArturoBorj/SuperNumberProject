@@ -1,0 +1,22 @@
+﻿@page "/registro"
+
+<script src="/lib/Js/Registro.js"></script>
+<div class="container d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
+
+    <div class="card-body mt-4">
+        <form id="registrationForm">
+            <div class="mb-3">
+                <input type="text" id="usernameR" name="username" class="form-control" placeholder="Usuario" required />
+            </div>
+            <div class="mb-3">
+                <input type="password" id="passwordR" name="password" class="form-control" placeholder="Password" required />
+            </div>
+            <div class="mb-3">
+                <input type="Password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Confirma Password" required />
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <button type="button" class="btn" id="btnGuardar">Guardar</button>
+            </div >
+        </form>
+    </div>
+</div>

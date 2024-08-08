@@ -1,0 +1,27 @@
+﻿@page "/"
+<PageTitle>Home</PageTitle>
+
+<script src="/lib/Js/Home.js"></script>
+<div class="container d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
+    <div class="row mt-3">
+        <div class="col-12 text-center">
+            <h1>Super Digito</h1>
+        </div>
+    </div>
+    <div class="card-body">
+        <form id="authForm">
+            <div class="mb-3">
+                <input type="text" id="username" name="username" class="form-control" placeholder="Usuario" required />
+            </div>
+            <div class="mb-3">
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password" required />
+            </div>
+            <div class="container d-flex justify-content-between mt-3">
+                <NavLink class="btn" href="/registro">Registro</NavLink>
+                <button type="submit" class="btn">Entrar</button>
+            </div>
+        </form>
+        <p id="message"></p>
+    </div>
+</div>
+

@@ -1,0 +1,26 @@
+﻿@page "/calcular"
+
+<script src="/lib/Js/Calc.js"></script>
+<div class="container d-flex flex-column align-items-center justify-content-center" style="height: 100v;">
+    <div class="card-body mt-4">
+        <div class="d-flex align-items-center justify-content-around">
+            <div class="mb-3 mr-2">
+                <input type="text" id="number" name="number" class="form-control" placeholder="Número" required />
+            </div>
+            <div class="mb-3 ml-2">
+                <input type="text" id="result" name="result" placeholder="Resultado" readonly />
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <button class="btn btn-primary" id="btnSave">Guardar</button>
+        </div>
+    </div>
+    <div class="d-flex flex-column justify-content-start" id="tableContainer" style="width:60%">
+        <h6>Historial</h6>
+        <div id="tableHistorical"></div>
+        <div class="d-flex justify-content-end mt-3">
+            <button class="btn" id="btnDeleteHis">Borrar Historial</button>
+        </div>
+    </div>
+
+</div>
